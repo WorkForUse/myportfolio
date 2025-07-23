@@ -29,7 +29,7 @@ const Home = () => {
         title: "Blogging Platform",
         description: "A responsive blogging platform built with React.js that uses Context API for state management. Features rich text editing and responsive design.",
         image: "https://st2.depositphotos.com/1006899/8421/i/450/depositphotos_84219350-stock-photo-word-blog-suspended-by-ropes.jpg",
-        link: "#",
+        link: "https://workforuse.github.io/DeehTee/",
         tags: ["React", "Context API", "Responsive"],
         isMern: false
       },
@@ -38,7 +38,7 @@ const Home = () => {
         title: "Social Media Static Web",
         description: "A lightweight social media interface built with pure Tailwind CSS. Features a clean, responsive design that works seamlessly across all device sizes.",
         image: "https://img.freepik.com/free-vector/modern-background-social-media-icons_1017-4839.jpg",
-        link: "#",
+        link: "https://workforuse.github.io/MyBindle/",
         tags: ["React", "Tailwind CSS", "Responsive"],
         isMern: false
       }
@@ -59,14 +59,14 @@ const Home = () => {
           </p>
           <div className="mb-10">
             <button className="px-8 py-3 border-2 border-amber-500 text-amber-600 font-semibold rounded-lg hover:bg-amber-500 hover:text-white transition-colors duration-300 text-base tracking-wider shadow-sm">
-              VIEW MY WORKS
+              <a href="#projects">VIEW MY WORKS</a>
             </button>
           </div>
           <div className="flex justify-center space-x-6">
             <a href="https://linkedin.com" className="text-gray-500 hover:text-amber-500 transition-colors font-medium text-base">
               LinkedIn
             </a>
-            <a href="https://github.com" className="text-gray-500 hover:text-amber-500 transition-colors font-medium text-base">
+            <a href="https://github.com/WorkForUse" className="text-gray-500 hover:text-amber-500 transition-colors font-medium text-base">
               GitHub
             </a>
           </div>
@@ -114,7 +114,7 @@ const Home = () => {
         </section>
 
         {/* Projects Section */}
-        <section className="mt-24 px-4">
+        <section className="mt-24 px-4" id="projects">
           <h3 className="text-sm font-bold text-amber-400 mb-4 uppercase tracking-wider">Our Recents</h3>
           <h1 className='text-5xl md:text-7xl font-extrabold mb-12 text-gray-900'>PROJECTS</h1>
           {/* Full Stack Projects */}
