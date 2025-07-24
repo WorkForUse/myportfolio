@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import cv from '../../public/Curriculum_Vitae.pdf';
+import cv from '../../public/Resume.pdf';
+import { MdDownload } from "react-icons/md";
 const Nav = () => {
   const navigation = [
     { name: 'Home', href: '/' },
@@ -7,16 +8,25 @@ const Nav = () => {
     { name: 'Contact', href: '/contact' },
   ];
 
+   const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = cv;
+    link.download = 'Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
   return (
     <div className="bg-white">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo - Left aligned */}
         <div className="flex items-center">
-          <img 
-            src="https://us.123rf.com/450wm/mmfcreative/mmfcreative2101/mmfcreative210116289/162907912-icono-de-logotipo-de-vector-de-letra-inicial-de-mp.jpg?ver=6" 
-            alt="logo" 
-            width={40} 
-            className="rounded-full mr-3" 
+          <img
+            src="https://us.123rf.com/450wm/mmfcreative/mmfcreative2101/mmfcreative210116289/162907912-icono-de-logotipo-de-vector-de-letra-inicial-de-mp.jpg?ver=6"
+            alt="logo"
+            width={40}
+            className="rounded-full mr-3"
           />
         </div>
         {/* Navigation Links - Right aligned */}
@@ -36,14 +46,12 @@ const Nav = () => {
           ))}
         </ul>
         {/* Download CV Button */}
-        <button>
-        <a
-          href={cv}
-          download
-          className="ml-6 px-4 py-2 bg-amber-500 text-white rounded-full font-semibold text-sm shadow hover:bg-amber-600 transition-colors"
+        <button
+          type="button"
+          onClick={handleDownload}
+          className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 text-white rounded-full font-semibold text-sm shadow hover:bg-amber-600 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
         >
-          Download CV
-        </a>
+          Resume <MdDownload className="text-base" aria-hidden="true" />
         </button>
       </nav>
     </div>
