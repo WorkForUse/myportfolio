@@ -60,15 +60,6 @@ const About = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-8">
-          <a href="mailto:hamzashahid.dev@gmail.com" className="px-6 py-2 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow hover:bg-yellow-300 transition-colors">Contact Me</a>
-          <div className="flex space-x-4">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 text-gray-500 transition-colors text-xl">
-              <i className="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 text-gray-500 transition-colors text-xl">
-              <i className="fab fa-github"></i> GitHub
-            </a>
-          </div>
         </div>
       </div>
     </section>

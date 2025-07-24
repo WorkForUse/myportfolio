@@ -1,6 +1,5 @@
-
 import { NavLink } from 'react-router-dom';
-
+import cv from '../../public/Curriculum_Vitae.pdf';
 const Nav = () => {
   const navigation = [
     { name: 'Home', href: '/' },
@@ -36,6 +35,16 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        {/* Download CV Button */}
+        <button>
+        <a
+          href={cv}
+          download
+          className="ml-6 px-4 py-2 bg-amber-500 text-white rounded-full font-semibold text-sm shadow hover:bg-amber-600 transition-colors"
+        >
+          Download CV
+        </a>
+        </button>
       </nav>
     </div>
   )
