@@ -63,7 +63,7 @@ const Home = () => {
             </button>
           </div>
           <div className="flex justify-center space-x-6">
-            <a href="https://linkedin.com" className="text-gray-500 hover:text-amber-500 transition-colors font-medium text-base">
+            <a href="https://www.linkedin.com/in/mhmzashahid1921linkdin/" className="text-gray-500 hover:text-amber-500 transition-colors font-medium text-base">
               LinkedIn
             </a>
             <a href="https://github.com/WorkForUse" className="text-gray-500 hover:text-amber-500 transition-colors font-medium text-base">
